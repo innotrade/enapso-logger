@@ -1,5 +1,5 @@
 {
-  "name": "enapso-logger",
+  "name": "@innotrade/enapso-logger",
   "version": "0.0.1",
   "description": "Enapso Logger",
   "main": "index.js",
