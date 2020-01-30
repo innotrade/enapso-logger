@@ -7,11 +7,11 @@
 const { EnapsoLogger } = require('../lib/enapso-logger');
 
 function demo() {
-	let logger = new EnapsoLogger();
-	logger.info("This is an information");
-	logger.warn("This is a warning");
-	logger.error("This is an error message");
-	logger.fatal("This is a fatal message");
+	let enlogger = new EnapsoLogger();
+	enlogger.info("This is an information");
+	enlogger.warn("This is a warning");
+	enlogger.error("This is an error message");
+	enlogger.fatal("This is a fatal message");
 }
 
 demo();
