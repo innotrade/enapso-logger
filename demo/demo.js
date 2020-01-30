@@ -5,13 +5,23 @@
 // a new console object for enhanced logging to the console
 
 const { EnapsoLogger } = require('../lib/enapso-logger');
+global.enlogger = new EnapsoLogger();
 
 function demo() {
-	let enlogger = new EnapsoLogger();
+	enlogger.setLevel(EnapsoLogger.ALL);
+
+	enlogger.log("This is a standard log line, just for compatibility reasons");
+	enlogger.debug("This is a debug message");
 	enlogger.info("This is an information");
 	enlogger.warn("This is a warning");
 	enlogger.error("This is an error message");
 	enlogger.fatal("This is a fatal message");
+
+	enlogger.info(enlogger.separatorLine());
+	enlogger.setActive(false);
+	enlogger.info("This message will NOT be shown");
+	enlogger.setActive(true);
+	enlogger.info("This message will be shown again");
 }
 
 demo();
