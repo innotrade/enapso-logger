@@ -7,3 +7,9 @@ Enapso Logger...
 * filters your log output to arbitrary levels
 * can be activated and deactivated at run-time
 
+## Installation
+
+```
+npm i @innotrade/enapso-logger --save
+```
+
