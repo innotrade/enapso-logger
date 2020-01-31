@@ -4,7 +4,7 @@
 
 // a new console object for enhanced logging to the console
 
-const { Console } = requires('./lib/enapso-logger');
+const { Console } = require('./lib/enapso-logger');
 
 const NAMESPACE = "enlogger";
 
