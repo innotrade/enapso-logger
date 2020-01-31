@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/innotrade/enapso-logger/issues"
   },
-  "homepage": "https://github.com/innotrade/enapso-logger#readme"
+  "homepage": "https://github.com/innotrade/enapso-logger#readme",
+  "dependencies": {
+    "@innotrade/enapso-args": "^0.1.1"
+  }
 }
