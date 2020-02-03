@@ -6,6 +6,7 @@
 
 const { EnapsoLogger } = require('../lib/enapso-logger');
 global.enlogger = new EnapsoLogger();
+enlogger.setLevel(EnapsoLogger.ALL);
 
 function demo() {
 	enlogger.setLevel(EnapsoLogger.ALL);
