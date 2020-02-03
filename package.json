@@ -1,6 +1,6 @@
 {
   "name": "@innotrade/enapso-logger",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Enapso Logger",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/innotrade/enapso-logger/issues"
   },
-  "homepage": "https://github.com/innotrade/enapso-logger#readme"
+  "homepage": "https://github.com/innotrade/enapso-logger#readme",
+  "dependencies": {
+    "@innotrade/enapso-args": "^0.1.1"
+  }
 }

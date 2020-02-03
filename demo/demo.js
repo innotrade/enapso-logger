@@ -4,7 +4,7 @@
 
 // a new console object for enhanced logging to the console
 
-const { EnapsoLogger } = require('../lib/enapso-logger');
+const { EnapsoLogger } = require('../index');
 global.enlogger = new EnapsoLogger();
 enlogger.setLevel(EnapsoLogger.ALL);
 

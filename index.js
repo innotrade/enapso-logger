@@ -1,15 +1,11 @@
 // Innotrade Enapso Logger
-// (C) Copyright 2019 Innotrade GmbH, Herzogenrath, NRW, Germany
+// (C) Copyright 2019-2020 Innotrade GmbH, Herzogenrath, NRW, Germany
 // Author: Alexander Schulze
 
 // a new console object for enhanced logging to the console
 
-const { Console } = requires('./lib/enapso-logger');
-
-const NAMESPACE = "enlogger";
+const { EnapsoLogger } = require('./lib/enapso-logger');
 
 module.exports = {
-	[NAMESPACE]: {
-		Console
-	}
+	EnapsoLogger
 }
