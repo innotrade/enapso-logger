@@ -8,13 +8,14 @@ Enapso Logger...
 * can be activated and deactivated at run-time
 
 ## Installation
-
 ```
 npm i @innotrade/enapso-logger --save
 ```
 
-## Usage
+## Migration
+First off all, the migration effort is as low as a simple search of ```console.[log|debug|infi|warn|error]``` and replace it by ```enlogger.[log|debug|infi|warn|error]``` - and your code will keep running without a visual difference. The Enapso Logger uses the Enapso Smart Arguments Processor to interpret optional parameters or alternative parameter types so that you can improve the logging capabilities in your code step by step as needed following the documentation below.
 
+## Usage
 ```javascript
 const { EnapsoLogger } = require('@innotrade/enapso-logger');
 global.enlogger = new EnapsoLogger();
