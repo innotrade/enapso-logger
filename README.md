@@ -33,7 +33,7 @@ function demo() {
 	enlogger.setActive(false);
 	enlogger.info("This message will NOT be shown");
 	enlogger.setActive(true);
-    enlogger.info("This message will be shown again");
+	enlogger.info("This message will be shown again");
 }
 
 demo();
