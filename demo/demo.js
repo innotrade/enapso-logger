@@ -1,28 +1,28 @@
 // Innotrade Enapso Logger
-// (C) Copyright 2019 Innotrade GmbH, Herzogenrath, NRW, Germany
+// (C) Copyright 2019-2020 Innotrade GmbH, Herzogenrath, NRW, Germany
 // Author: Alexander Schulze
 
 // a new console object for enhanced logging to the console
 
-const { EnapsoLogger } = require('../index');
-global.enlogger = new EnapsoLogger();
-enlogger.setLevel(EnapsoLogger.ALL);
+const { EnapsoLogger, EnapsoLoggerFactory } = require('../index');
+EnapsoLoggerFactory.createGlobalLogger('enLogger');
+enLogger.setLevel(EnapsoLogger.ALL);
 
 function demo() {
-	enlogger.setLevel(EnapsoLogger.ALL);
+	enLogger.setLevel(EnapsoLogger.ALL);
 
-	enlogger.log("This is a standard log line, just for compatibility reasons");
-	enlogger.debug("This is a debug message");
-	enlogger.info("This is an information");
-	enlogger.warn("This is a warning");
-	enlogger.error("This is an error message");
-	enlogger.fatal("This is a fatal message");
+	enLogger.log('This is a standard log line, just for compatibility reasons');
+	enLogger.debug('This is a debug message');
+	enLogger.info('This is an information');
+	enLogger.warn('This is a warning');
+	enLogger.error('This is an error message');
+	enLogger.fatal('This is a fatal message');
 
-	enlogger.info(enlogger.separatorLine());
-	enlogger.setActive(false);
-	enlogger.info("This message will NOT be shown");
-	enlogger.setActive(true);
-	enlogger.info("This message will be shown again");
+	enLogger.info(enLogger.separatorLine());
+	enLogger.setActive(false);
+	enLogger.info('This message will NOT be shown');
+	enLogger.setActive(true);
+	enLogger.info('This message will be shown again');
 }
 
 demo();

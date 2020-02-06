@@ -4,8 +4,9 @@
 
 // a new console object for enhanced logging to the console
 
-const { EnapsoLogger } = require('./lib/enapso-logger');
+const { EnapsoLogger, EnapsoLoggerFactory, enlogger } = require('./lib/enapso-logger');
 
 module.exports = {
-	EnapsoLogger
+	EnapsoLogger, EnapsoLoggerFactory,
+	enlogger
 }
